@@ -6,6 +6,11 @@
     android:orientation="vertical"
     tools:context=".ui.work.WorkActivity">
 
+    <SearchView
+        android:id="@+id/searchWork"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/listWork"
         android:layout_width="match_parent"

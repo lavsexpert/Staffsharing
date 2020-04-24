@@ -9,18 +9,22 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import club.plus1.staffsharing.R;
 
 public class OfferAdapter extends RecyclerView.Adapter<OfferAdapter.OfferHolder>{
 
-    Context context;
-    List<OfferItem> list;
+    private Context context;
+    private List<OfferItem> list;
+    private List<OfferItem> copy;
 
     OfferAdapter(Context context, List<OfferItem> list){
         this.context = context;
         this.list = list;
+        copy = new ArrayList<>();
+        copy.addAll(list);
     }
 
     @NonNull
@@ -41,9 +45,24 @@ public class OfferAdapter extends RecyclerView.Adapter<OfferAdapter.OfferHolder>
         return list.size();
     }
 
+    void filter(String text) {
+        list.clear();
+        if(text.isEmpty()){
+            list.addAll(copy);
+        } else{
+            text = text.toLowerCase();
+            for(OfferItem item: copy){
+                if(item.text.toLowerCase().contains(text)){
+                    list.add(item);
+                }
+            }
+        }
+        notifyDataSetChanged();
+    }
+
     class OfferHolder extends RecyclerView.ViewHolder{
-        public TextView textView;
-        public OfferHolder(@NonNull View itemView) {
+        TextView textView;
+        OfferHolder(@NonNull View itemView) {
             super(itemView);
             textView = itemView.findViewById(R.id.textOffer);
         }

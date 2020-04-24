@@ -12,8 +12,6 @@ import club.plus1.staffsharing.common.App;
 
 public class LaunchActivity extends AppCompatActivity {
 
-    private TextView version;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,7 +21,7 @@ public class LaunchActivity extends AppCompatActivity {
     }
 
     private void showVersion(){
-        version = findViewById(R.id.version);
+        TextView version = findViewById(R.id.version);
         version.setText(getString(R.string.app_version, App.versionName, App.versionCode));
     }
 

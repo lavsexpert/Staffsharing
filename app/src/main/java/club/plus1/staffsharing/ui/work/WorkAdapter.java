@@ -9,18 +9,22 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import club.plus1.staffsharing.R;
 
 public class WorkAdapter extends RecyclerView.Adapter<WorkAdapter.WorkHolder>{
 
-    Context context;
-    List<WorkItem> list;
+    private Context context;
+    private List<WorkItem> list;
+    private List<WorkItem> copy;
 
     WorkAdapter(Context context, List<WorkItem> list){
         this.context = context;
         this.list = list;
+        copy = new ArrayList<>();
+        copy.addAll(list);
     }
 
     @NonNull
@@ -41,9 +45,24 @@ public class WorkAdapter extends RecyclerView.Adapter<WorkAdapter.WorkHolder>{
         return list.size();
     }
 
+    void filter(String text) {
+        list.clear();
+        if(text.isEmpty()){
+            list.addAll(copy);
+        } else{
+            text = text.toLowerCase();
+            for(WorkItem item: copy){
+                if(item.text.toLowerCase().contains(text)){
+                    list.add(item);
+                }
+            }
+        }
+        notifyDataSetChanged();
+    }
+
     class WorkHolder extends RecyclerView.ViewHolder{
-        public TextView textView;
-        public WorkHolder(@NonNull View itemView) {
+        TextView textView;
+        WorkHolder(@NonNull View itemView) {
             super(itemView);
             textView = itemView.findViewById(R.id.textWork);
         }

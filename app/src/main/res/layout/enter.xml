@@ -33,10 +33,12 @@
 
             <Button
                 android:id="@+id/buttonStaff"
+                style="@style/Widget.AppCompat.Button.Colored"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="onStaff"
-                android:text="@string/enter_looking_for_staff" />
+                android:text="@string/enter_looking_for_staff"
+                android:textAllCaps="false" />
         </LinearLayout>
 
         <LinearLayout
@@ -55,10 +57,12 @@
 
             <Button
                 android:id="@+id/buttonOffer"
+                style="@style/Widget.AppCompat.Button.Colored"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="onOffer"
-                android:text="@string/enter_offer_staff" />
+                android:text="@string/enter_offer_staff"
+                android:textAllCaps="false" />
         </LinearLayout>
     </LinearLayout>
 
@@ -78,10 +82,12 @@
 
             <Button
                 android:id="@+id/buttonWork"
+                style="@style/Widget.AppCompat.Button.Colored"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="onWork"
-                android:text="@string/enter_looking_for_work" />
+                android:text="@string/enter_looking_for_work"
+                android:textAllCaps="false" />
 
             <ImageView
                 android:id="@+id/imageWork"
@@ -101,7 +107,7 @@
 
             <EditText
                 android:id="@+id/editLogin"
-                android:layout_width="200dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/enter_login"
                 android:inputType="textPersonName"
@@ -109,7 +115,7 @@
 
             <EditText
                 android:id="@+id/editPassword"
-                android:layout_width="200dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/enter_password"
                 android:inputType="textPassword"
@@ -117,10 +123,12 @@
 
             <Button
                 android:id="@+id/buttonEnter"
-                android:layout_width="200dp"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="onEnter"
-                android:text="@string/enter_enter" />
+                android:text="@string/enter_enter"
+                android:textAllCaps="false" />
         </LinearLayout>
     </LinearLayout>
 

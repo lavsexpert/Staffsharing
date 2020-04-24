@@ -3,8 +3,6 @@ package club.plus1.staffsharing.ui;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.EditText;
-import android.widget.RadioGroup;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -15,15 +13,10 @@ import club.plus1.staffsharing.ui.work.WorkActivity;
 
 public class EnterActivity extends AppCompatActivity {
 
-    private EditText editLogin;
-    private EditText editPassword;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.enter);
-        editLogin = findViewById(R.id.editLogin);
-        editPassword = findViewById(R.id.editPassword);
         setTitle(getString(R.string.enter_title));
     }
 

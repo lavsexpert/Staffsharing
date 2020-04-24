@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import android.os.Bundle;
+import android.widget.SearchView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -11,6 +12,7 @@ import club.plus1.staffsharing.R;
 
 public class OfferActivity extends AppCompatActivity {
 
+    SearchView searchView;
     RecyclerView recyclerView;
     OfferAdapter adapter;
     List<OfferItem> list;
@@ -25,6 +27,21 @@ public class OfferActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setAdapter(adapter);
         setTitle(getString(R.string.offer_title));
+
+        searchView = findViewById(R.id.searchOffer);
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                adapter.filter(query);
+                return true;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String newText) {
+                adapter.filter(newText);
+                return true;
+            }
+        });
     }
 
     private void setData() {
