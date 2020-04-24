@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -8,53 +9,116 @@
     android:orientation="vertical"
     tools:context=".ui.EnterActivity">
 
-    <RadioGroup
-        android:id="@+id/radioGroup"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
 
-        <RadioButton
-            android:id="@+id/radioEmployee"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/enter_employee" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            tools:ignore="NestedWeights">
 
-        <RadioButton
-            android:id="@+id/radioCompany"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/enter_company" />
-    </RadioGroup>
+            <ImageView
+                android:id="@+id/imageStaff"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/icon"
+                android:contentDescription="@string/enter_looking_for_staff" />
 
-    <Button
-        android:id="@+id/buttonRegister"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:onClick="onRegister"
-        android:text="@string/enter_register" />
+            <Button
+                android:id="@+id/buttonStaff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/enter_looking_for_staff" />
+        </LinearLayout>
 
-    <EditText
-        android:id="@+id/editLogin"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:hint="@string/enter_login"
-        android:inputType="textPersonName"
-        tools:ignore="Autofill" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
 
-    <EditText
-        android:id="@+id/editPassword"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:hint="@string/enter_password"
-        android:inputType="textPassword"
-        tools:ignore="Autofill" />
+            <ImageView
+                android:id="@+id/imageOffer"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/icon"
+                android:contentDescription="@string/enter_offer_staff" />
 
-    <Button
-        android:id="@+id/buttonEnter"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:onClick="onEnter"
-        android:text="@string/enter_enter" />
+            <Button
+                android:id="@+id/buttonOffer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/enter_offer_staff" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            tools:ignore="NestedWeights">
+
+            <Button
+                android:id="@+id/buttonWork"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/enter_looking_for_work" />
+
+            <ImageView
+                android:id="@+id/imageWork"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/icon"
+                android:contentDescription="@string/enter_looking_for_work" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/editLogin"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/enter_login"
+                android:inputType="textPersonName"
+                tools:ignore="Autofill" />
+
+            <EditText
+                android:id="@+id/editPassword"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/enter_password"
+                android:inputType="textPassword"
+                tools:ignore="Autofill" />
+
+            <Button
+                android:id="@+id/buttonEnter"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:onClick="onEnter"
+                android:text="@string/enter_enter" />
+        </LinearLayout>
+    </LinearLayout>
 
 </LinearLayout>

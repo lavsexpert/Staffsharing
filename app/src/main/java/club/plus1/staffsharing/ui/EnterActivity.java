@@ -12,7 +12,6 @@ import club.plus1.staffsharing.R;
 
 public class EnterActivity extends AppCompatActivity {
 
-    private RadioGroup radioGroup;
     private EditText editLogin;
     private EditText editPassword;
 
@@ -20,26 +19,9 @@ public class EnterActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.enter);
-        radioGroup = findViewById(R.id.radioGroup);
         editLogin = findViewById(R.id.editLogin);
         editPassword = findViewById(R.id.editPassword);
         setTitle(getString(R.string.enter_title));
-    }
-
-    public void onRegister(View view){
-        Intent intent;
-        switch (radioGroup.getCheckedRadioButtonId()){
-            case R.id.radioCompany:
-                intent = new Intent(this, CompanyActivity.class);
-                break;
-            case R.id.buttonRegister:
-                intent = new Intent(this, EmployeeActivity.class);
-                break;
-            default:
-                intent = new Intent(this, EmployeeActivity.class);
-                break;
-        }
-        startActivity(intent);
     }
 
     public void onEnter(View view){

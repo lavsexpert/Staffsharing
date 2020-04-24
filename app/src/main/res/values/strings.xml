@@ -1,6 +1,6 @@
 <resources>
     // App
-    <string name="app_name">Staffsharing</string>
+    <string name="app_name">StaffSharing</string>
     <string name="app_logo">App logo</string>
     <string name="app_version">version %1$s.%2$d</string>
 
@@ -9,9 +9,9 @@
 
     // Enter
     <string name="enter_title">Enter</string>
-    <string name="enter_employee">Employee</string>
-    <string name="enter_company">Company</string>
-    <string name="enter_register">Register</string>
+    <string name="enter_looking_for_staff">Looking for staff</string>
+    <string name="enter_looking_for_work">Looking for work</string>
+    <string name="enter_offer_staff">Offer staff</string>
     <string name="enter_login">Login</string>
     <string name="enter_password">Password</string>
     <string name="enter_enter">Enter</string>
