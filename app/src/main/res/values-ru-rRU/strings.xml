@@ -34,4 +34,13 @@
     <string name="employee_password">Пароль</string>
     <string name="employee_repeat">Повтор пароля</string>
     <string name="employee_save">Сохранить</string>
+
+    // Offer
+    <string name="offer_title">Предлагаю персонал</string>
+
+    // Staff
+    <string name="staff_title">Ищу персоанал</string>
+
+    // Work
+    <string name="work_title">Ищу работу</string>
 </resources>

@@ -33,4 +33,13 @@
     <string name="employee_password">Password</string>
     <string name="employee_repeat">Repeat password</string>
     <string name="employee_save">Save</string>
+
+    // Offer
+    <string name="offer_title">Offer staff</string>
+
+    // Staff
+    <string name="staff_title">Looking for staff</string>
+
+    // Work
+    <string name="work_title">Looking for work</string>
 </resources>

@@ -21,7 +21,10 @@
         </activity>
         <activity android:name=".ui.EnterActivity" />
         <activity android:name=".ui.CompanyActivity" />
-        <activity android:name=".ui.EmployeeActivity"/>
+        <activity android:name=".ui.EmployeeActivity" />
+        <activity android:name=".ui.offer.OfferActivity"/>
+        <activity android:name=".ui.staff.StaffActivity"/>
+        <activity android:name=".ui.work.WorkActivity"/>
     </application>
 
 </manifest>
