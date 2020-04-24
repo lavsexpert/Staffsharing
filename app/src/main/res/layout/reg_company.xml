@@ -4,9 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center"
-    android:gravity="center"
-    android:orientation="vertical"
-    tools:context=".ui.CompanyActivity">
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
 
     <EditText
         android:id="@+id/editName"
@@ -42,7 +41,9 @@
 
     <Button
         android:id="@+id/buttonCompanySave"
+        style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/company_save" />
+        android:text="@string/company_save"
+        android:textAllCaps="false"/>
 </LinearLayout>

@@ -17,53 +17,63 @@
         android:baselineAligned="false">
 
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:orientation="vertical"
-            tools:ignore="NestedWeights">
+            tools:ignore="NestedWeights,UselessParent">
 
             <ImageView
                 android:id="@+id/imageStaff"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/icon"
-                android:contentDescription="@string/enter_looking_for_staff" />
+                android:contentDescription="@string/enter_looking_for_staff"
+                app:srcCompat="@drawable/logo" />
 
-            <Button
-                android:id="@+id/buttonStaff"
-                style="@style/Widget.AppCompat.Button.Colored"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:onClick="onStaff"
-                android:text="@string/enter_looking_for_staff"
-                android:textAllCaps="false" />
+                android:orientation="horizontal"
+                android:baselineAligned="false">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    tools:ignore="NestedWeights">
+
+                    <Button
+                        android:id="@+id/buttonStaff"
+                        style="@style/Widget.AppCompat.Button.Colored"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="onStaff"
+                        android:text="@string/enter_looking_for_staff"
+                        android:textAllCaps="false" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/buttonOffer"
+                        style="@style/Widget.AppCompat.Button.Colored"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="onOffer"
+                        android:text="@string/enter_offer_staff"
+                        android:textAllCaps="false" />
+                </LinearLayout>
+
+            </LinearLayout>
+
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="vertical">
-
-            <ImageView
-                android:id="@+id/imageOffer"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"
-                app:srcCompat="@drawable/icon"
-                android:contentDescription="@string/enter_offer_staff" />
-
-            <Button
-                android:id="@+id/buttonOffer"
-                style="@style/Widget.AppCompat.Button.Colored"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:onClick="onOffer"
-                android:text="@string/enter_offer_staff"
-                android:textAllCaps="false" />
-        </LinearLayout>
     </LinearLayout>
 
     <LinearLayout
@@ -89,14 +99,6 @@
                 android:text="@string/enter_looking_for_work"
                 android:textAllCaps="false" />
 
-            <ImageView
-                android:id="@+id/imageWork"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"
-                app:srcCompat="@drawable/icon"
-                android:contentDescription="@string/enter_looking_for_work" />
-
         </LinearLayout>
 
         <LinearLayout
@@ -104,6 +106,15 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:orientation="vertical">
+
+            <Button
+                android:id="@+id/buttonRegistration"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onReg"
+                android:text="@string/enter_registration"
+                android:textAllCaps="false" />
 
             <EditText
                 android:id="@+id/editLogin"

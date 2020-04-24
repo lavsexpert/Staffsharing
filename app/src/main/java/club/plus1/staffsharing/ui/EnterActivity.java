@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import club.plus1.staffsharing.R;
 import club.plus1.staffsharing.ui.offer.OfferActivity;
+import club.plus1.staffsharing.ui.reg.RegActivity;
 import club.plus1.staffsharing.ui.staff.StaffActivity;
 import club.plus1.staffsharing.ui.work.WorkActivity;
 
@@ -35,14 +36,13 @@ public class EnterActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void onReg(View view){
+        Intent intent = new Intent(this, RegActivity.class);
+        startActivity(intent);
+    }
+
     public void onEnter(View view){
-        Intent intent;
-        int page = (int)(Math.random() * 100) % 2;
-        if (page == 0) {
-            intent = new Intent(this, CompanyActivity.class);
-        } else {
-            intent = new Intent(this, EmployeeActivity.class);
-        }
+        Intent intent = new Intent(this, RegActivity.class);
         startActivity(intent);
     }
 }

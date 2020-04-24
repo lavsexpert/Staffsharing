@@ -18,6 +18,12 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            applicationVariants.all { variant ->
+                variant.outputs.each { output ->
+                    def name = "v${variant.versionName}.${variant.versionCode}-${variant.name}.apk"
+                    output.outputFileName = name
+                }
+            }
         }
     }
     compileOptions {
@@ -33,6 +39,7 @@ dependencies {
 
     // UI
     implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'com.google.android.material:material:1.1.0'
     implementation 'androidx.recyclerview:recyclerview:1.1.0'
 
     // Test

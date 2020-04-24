@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     // App
-    <string name="app_name">Обмен работниками</string>
+    <string name="app_name">Обмен персоналом</string>
     <string name="app_logo">Логотип приложения</string>
     <string name="app_version">версия %1$s.%2$d</string>
 
@@ -13,6 +13,7 @@
     <string name="enter_looking_for_staff">Ищу персонал</string>
     <string name="enter_looking_for_work">Ищу работу</string>
     <string name="enter_offer_staff">Предлагаю персонал</string>
+    <string name="enter_registration">Зарегистрироваться</string>
     <string name="enter_login">Логин</string>
     <string name="enter_password">Пароль</string>
     <string name="enter_enter">Войти</string>
