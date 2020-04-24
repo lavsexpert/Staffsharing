@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Обмен работниками</string>
+    <string name="app_logo">Логотип приложения</string>
+    <string name="app_version">версия %1$s.%2$d</string>
+    <string name="error_app_package_not_found">Не удалось найти пакет приложения</string>
+    <string name="enter_title">Вход</string>
+    <string name="enter_employee">Специалист</string>
+    <string name="enter_company">Компания</string>
+    <string name="enter_register">Зарегистрироваться</string>
+    <string name="enter_login">Логин</string>
+    <string name="enter_password">Пароль</string>
+    <string name="enter_enter">Войти</string>
+    <string name="company_title">Регистрация компании</string>
+    <string name="company_name">Название компании</string>
+    <string name="company_id">ИНН компании</string>
+    <string name="company_password">Пароль</string>
+    <string name="company_repeat">Повтор пароля</string>
+    <string name="company_save">Сохранить</string>
+    <string name="employee_title">Регистрация специалиста</string>
+    <string name="employee_surname">Фамилия</string>
+    <string name="employee_name">Имя</string>
+    <string name="employee_patronymic">Отчество</string>
+    <string name="employee_id">Серия и номер паспорта</string>
+    <string name="employee_password">Пароль</string>
+    <string name="employee_repeat">Повтор пароля</string>
+    <string name="employee_save">Сохранить</string>
+</resources>
