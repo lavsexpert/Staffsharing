@@ -7,5 +7,30 @@
     // Errors
     <string name="error_app_package_not_found">Cannot be found application package</string>
 
-    // Other
+    // Enter
+    <string name="enter_title">Enter</string>
+    <string name="enter_employee">Employee</string>
+    <string name="enter_company">Company</string>
+    <string name="enter_register">Register</string>
+    <string name="enter_login">Login</string>
+    <string name="enter_password">Password</string>
+    <string name="enter_enter">Enter</string>
+
+    // Company
+    <string name="company_title">Company</string>
+    <string name="company_name">Company name</string>
+    <string name="company_id">Company ID</string>
+    <string name="company_password">Password</string>
+    <string name="company_repeat">Repeat password</string>
+    <string name="company_save">Save</string>
+
+    // Employee
+    <string name="employee_title">Employee</string>
+    <string name="employee_surname">Surname</string>
+    <string name="employee_name">Name</string>
+    <string name="employee_patronymic">Patronymic</string>
+    <string name="employee_id">Document ID</string>
+    <string name="employee_password">Password</string>
+    <string name="employee_repeat">Repeat password</string>
+    <string name="employee_save">Save</string>
 </resources>

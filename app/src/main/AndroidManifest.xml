@@ -15,10 +15,13 @@
         <activity android:name=".ui.LaunchActivity">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />
+
                 <action android:name="android.intent.action.MAIN" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.EnterActivity"/>
+        <activity android:name=".ui.EnterActivity" />
+        <activity android:name=".ui.CompanyActivity" />
+        <activity android:name=".ui.EmployeeActivity"/>
     </application>
 
 </manifest>
