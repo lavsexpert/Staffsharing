@@ -7,6 +7,31 @@
     android:orientation="vertical"
     tools:context=".ui.reg.RegActivity">
 
+    <EditText
+        android:id="@+id/editLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/reg_login"
+        android:inputType="textPersonName"
+        tools:ignore="Autofill" />
+
+    <EditText
+        android:id="@+id/editPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/reg_password"
+        android:inputType="textPassword"
+        tools:ignore="Autofill" />
+
+    <EditText
+        android:id="@+id/editRepeat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/reg_repeat"
+        android:inputType="textPassword"
+        tools:ignore="Autofill" />
+
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tab"
         android:layout_width="match_parent"

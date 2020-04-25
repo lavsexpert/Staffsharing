@@ -7,6 +7,9 @@
 
     // Errors
     <string name="error_app_package_not_found">Не удалось найти пакет приложения</string>
+    <string name="error_enter_login_or_password_is_empty">Заполните логин и пароль для входа или зарегистрируйтесь</string>
+    <string name="error_enter_user_not_registered">Пользователя с таким логином и паролем нет в системе. Зарегистрируйтесь</string>
+    <string name="error_reg_password_and_repeat_not_equal">Пароль и подтверждение пароля не совпадают</string>
 
     // Enter
     <string name="enter_title">Вход</string>
@@ -18,22 +21,22 @@
     <string name="enter_password">Пароль</string>
     <string name="enter_enter">Войти</string>
 
+    // Reg
+    <string name="reg_title">Регистрация</string>
+    <string name="reg_login">Логин</string>
+    <string name="reg_password">Пароль</string>
+    <string name="reg_repeat">Повтор пароля</string>
+
     // Company
-    <string name="company_title">Регистрация компании</string>
     <string name="company_name">Название компании</string>
     <string name="company_id">ИНН компании</string>
-    <string name="company_password">Пароль</string>
-    <string name="company_repeat">Повтор пароля</string>
     <string name="company_save">Сохранить</string>
 
     // Employee
-    <string name="employee_title">Регистрация специалиста</string>
     <string name="employee_surname">Фамилия</string>
     <string name="employee_name">Имя</string>
     <string name="employee_patronymic">Отчество</string>
     <string name="employee_id">Серия и номер паспорта</string>
-    <string name="employee_password">Пароль</string>
-    <string name="employee_repeat">Повтор пароля</string>
     <string name="employee_save">Сохранить</string>
 
     // Offer
@@ -44,4 +47,7 @@
 
     // Work
     <string name="work_title">Ищу работу</string>
+
+    // Profile
+    <string name="profile_title">Профиль</string>
 </resources>

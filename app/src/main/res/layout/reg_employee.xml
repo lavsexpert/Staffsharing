@@ -39,27 +39,12 @@
         android:inputType="textPersonName"
         tools:ignore="Autofill" />
 
-    <EditText
-        android:id="@+id/editEmployeePassword"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/employee_password"
-        android:inputType="textPassword"
-        tools:ignore="Autofill" />
-
-    <EditText
-        android:id="@+id/editEmployeeRepeat"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:autofillHints=""
-        android:hint="@string/employee_repeat"
-        android:inputType="textPassword" />
-
     <Button
         android:id="@+id/buttonEmployeeSave"
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:onClick="onEmployeeSave"
         android:text="@string/employee_save"
-        android:textAllCaps="false"/>
+        android:textAllCaps="false" />
 </LinearLayout>

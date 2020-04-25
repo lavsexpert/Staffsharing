@@ -23,27 +23,12 @@
         android:inputType="textPersonName"
         tools:ignore="Autofill" />
 
-    <EditText
-        android:id="@+id/editCompanyPassword"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/company_password"
-        android:inputType="textPassword"
-        tools:ignore="Autofill" />
-
-    <EditText
-        android:id="@+id/editCompanyRepeat"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/company_repeat"
-        android:inputType="textPassword"
-        tools:ignore="Autofill" />
-
     <Button
         android:id="@+id/buttonCompanySave"
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:onClick="onCompanySave"
         android:text="@string/company_save"
-        android:textAllCaps="false"/>
+        android:textAllCaps="false" />
 </LinearLayout>

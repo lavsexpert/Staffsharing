@@ -12,18 +12,19 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="AllowBackup">
-        <activity android:name=".ui.LaunchActivity">
+         <activity android:name=".ui.LaunchActivity">
             <intent-filter>
-                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.LAUNCHER" />
 
-                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="android.intent.action.MAIN" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.EnterActivity"/>
-        <activity android:name=".ui.reg.RegActivity"/>
-        <activity android:name=".ui.offer.OfferActivity"/>
-        <activity android:name=".ui.staff.StaffActivity"/>
-        <activity android:name=".ui.work.WorkActivity"/>
+        <activity android:name=".ui.EnterActivity" />
+        <activity android:name=".ui.reg.RegActivity" />
+        <activity android:name=".ui.ProfileActivity" />
+        <activity android:name=".ui.offer.OfferActivity" />
+        <activity android:name=".ui.staff.StaffActivity" />
+        <activity android:name=".ui.work.WorkActivity" />
     </application>
 
 </manifest>
