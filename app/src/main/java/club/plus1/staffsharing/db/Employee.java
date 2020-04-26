@@ -7,29 +7,28 @@ import androidx.room.Ignore;
 import androidx.room.PrimaryKey;
 
 @Entity
-public class User {
-
-    @Ignore
-    public static final int Company = 1;
-    @Ignore
-    public static final int Employee = 2;
-    @Ignore
-    public static final int Admin = 3;
+public class Employee {
 
     @NonNull
     @PrimaryKey
     public String login = "";
 
-    @ColumnInfo(name = "userType")
-    public int userType;
+    @ColumnInfo(name = "surname")
+    public String surname;
 
-    @ColumnInfo(name = "password")
-    public String password;
+    @ColumnInfo(name = "name")
+    public String name;
+
+    @ColumnInfo(name = "patronymic")
+    public String patronymic;
+
+    @ColumnInfo(name = "id")
+    public String id;
 
     @Ignore
     @NonNull
     @Override
     public String toString(){
-        return login;
+        return surname + " " + name + " " + patronymic;
     }
 }

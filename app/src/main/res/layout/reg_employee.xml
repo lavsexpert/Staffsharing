@@ -8,7 +8,7 @@
     android:orientation="vertical">
 
     <EditText
-        android:id="@+id/editSurname"
+        android:id="@+id/editEmployeeSurname"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/employee_surname"
@@ -16,7 +16,7 @@
         tools:ignore="Autofill" />
 
     <EditText
-        android:id="@+id/editName"
+        android:id="@+id/editEmployeeName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/employee_name"
@@ -24,7 +24,7 @@
         tools:ignore="Autofill" />
 
     <EditText
-        android:id="@+id/editPatronymic"
+        android:id="@+id/editEmployeePatronymic"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/employee_patronymic"
@@ -32,7 +32,7 @@
         tools:ignore="Autofill" />
 
     <EditText
-        android:id="@+id/editDocumentId"
+        android:id="@+id/editEmployeeId"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/employee_id"

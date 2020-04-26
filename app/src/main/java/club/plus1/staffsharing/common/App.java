@@ -7,6 +7,8 @@ import android.content.pm.PackageManager;
 import android.widget.Toast;
 
 import club.plus1.staffsharing.R;
+import club.plus1.staffsharing.db.Company;
+import club.plus1.staffsharing.db.Employee;
 import club.plus1.staffsharing.db.Database;
 import club.plus1.staffsharing.db.User;
 
@@ -15,6 +17,8 @@ public class App extends Application {
     private static Context appContext;
     private static Database db;
     public static User user;
+    public static Company company;
+    public static Employee employee;
     public static int versionCode;
     public static String versionName;
 
@@ -73,5 +77,7 @@ public class App extends Application {
         Database.destroyInstance();
         setDb(null);
         user = null;
+        company = null;
+        employee = null;
     }
 }

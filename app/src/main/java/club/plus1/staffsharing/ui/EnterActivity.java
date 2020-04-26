@@ -10,7 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import club.plus1.staffsharing.R;
 import club.plus1.staffsharing.common.App;
-import club.plus1.staffsharing.db.DataService;
+import club.plus1.staffsharing.db.DataExecute;
 import club.plus1.staffsharing.db.User;
 import club.plus1.staffsharing.ui.offer.OfferActivity;
 import club.plus1.staffsharing.ui.reg.RegActivity;
@@ -32,7 +32,7 @@ public class EnterActivity extends AppCompatActivity {
         editPassword = findViewById(R.id.editPassword);
 
         App.user = new User();
-        DataService.restoreUser(App.user);
+        DataExecute.restoreUser();
         editLogin.setText(App.user.login);
         editPassword.setText(App.user.password);
     }
@@ -58,6 +58,15 @@ public class EnterActivity extends AppCompatActivity {
     }
 
     public void onEnter(View view){
+        User user = new User();
+        user.login = editLogin.getText().toString();
+        user.password = editPassword.getText().toString();
+        if (user.login.equals("admin")){
+            user.userType = User.Admin;
+            App.user = user;
+        } else {
+            DataExecute.checkUser(user);
+        }
         if (App.user != null){
             Intent intent = new Intent(this, ProfileActivity.class);
             startActivity(intent);

@@ -8,7 +8,7 @@
     android:orientation="vertical">
 
     <EditText
-        android:id="@+id/editName"
+        android:id="@+id/editCompanyName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/company_name"
@@ -16,7 +16,7 @@
         tools:ignore="Autofill" />
 
     <EditText
-        android:id="@+id/editId"
+        android:id="@+id/editCompanyId"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/company_id"
